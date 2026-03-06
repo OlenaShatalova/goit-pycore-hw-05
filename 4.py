@@ -1,9 +1,9 @@
 def input_error(func):
     def inner(*args, **kwargs):
         """
-            Decorator for handling user input errors.
-            Catches ValueError, KeyError, and IndexError and returns
-            user-friendly messages instead of stopping the program.
+        Decorator for handling user input errors.
+        Catches ValueError, KeyError, and IndexError and returns
+        user-friendly messages instead of stopping the program.
         """
         try:
             return func(*args, **kwargs)
